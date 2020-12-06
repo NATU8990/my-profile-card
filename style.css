@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(173,216,230);
+    background-size: cover;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 67%, 0% 100%);
+    opacity: 0.5;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -100px;
+    z-index: 10;
+}
+
+.name {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: rgb(84,84,84);
+    margin: 10px 0;   
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.location i{
+    font-size: 13px;
+    margin-right: 5px;
+    color: rgb(84,84,84);
+}
+
+.location p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 13px;
+    color: rgb(84,84,84);
+    font-weight: 100;
+}
+
+.about-me {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 13px;
+    color: rgb(84,84,84);
+    text-align: center;
+    margin: 20px 0 40px 0;
+    width: 90%;
+}
+
+.card button {
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Kumbh Sans', sans-serif;
+    letter-spacing: 1.2px;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgb(173,216,230);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .4);
+}
+
+.card button:hover {
+    animation: buttonRotation 1s 0s linear;
+    color:rgb(84,84,84); 
+}
+
+@keyframes buttonRotation {
+    0% {transform: scale(1) rotateZ(0)}
+    50% {transform: scale(1.1) rotateZ(-2deg)}
+    100% {transform: scale(1) rotateZ(0)}
+}
+
+.social-icons {
+    width: 200px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-top: 0.5px solid #a0a0a0;
+    padding-top: 10px;
+}
+
+.social-icons i {
+    font-size: 13px;
+    color: rgb(84,84,84);
+}
+
+.social-icons i:hover {
+    color: rgb(173,216,230);
+    font-size: 15px;
+}
